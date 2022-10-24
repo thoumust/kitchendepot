@@ -63,8 +63,58 @@ body {
 .navbar-item:hover, navbar-item.activepage {
 	background: gold;
 }
+
+/**********main**********/
+main {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+}
+
 /**********ratings**********/
+.ratings {
+	background-color: firebrick;
+	color: #FFF;
+	padding: 0 0 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ratings-location{
+	display: flex;
+	align-items: center;
+}
+.ratings-tags{
+	display: flex;
+	align-items: center;
+}
 .ratings-icon {
 	width: 18px;
 	height: 18px;
+	filter: invert(100%);
+}
+.ratings ul {
+	display: flex;
+}
+.ratings li {
+	list-style: none;
+}
+.ratings li:not(:first-child)::before {
+	content: " ";
+}
+.ratings-stars {
+	display: flex;
+	align-items: center;
+}
+.ratings-votes {
+	background-color: orangered;
+	padding: 10px;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ratings-item .ratings-icon:first-of-type {
+	margin-right: 5px;
 }
