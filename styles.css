@@ -1,0 +1,70 @@
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+img {
+	width: 100%;
+}
+body {
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	color: #333;
+	font-size: 14px;
+}
+/**********header**********/
+.header {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.header-logo {
+	width: 60px;
+	margin: 5px 0;
+}
+.nav {
+	display: flex;
+	align-items: stretch;
+}
+.org-name {
+	align-self: center;
+	margin-right: auto;
+	margin-left: 10px;
+	font-size: 24px;
+	font-weight: 400;
+	color: green;
+}
+.navbar {
+	display: flex;
+}
+.navbar-item{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 20px;
+	cursor: pointer;
+}
+.navbar-item img {
+	width: 20px;
+	height: 20px;
+	margin-top: 14px;
+	filter: opacity(50%);
+}
+.navbar-item span {
+	text-transform: lowercase;
+	font-weight: 500;
+	color: #AAA;
+}
+.navbar-item:hover, navbar-item.activepage {
+	background: gold;
+}
+/**********ratings**********/
+.ratings-icon {
+	width: 18px;
+	height: 18px;
+}
